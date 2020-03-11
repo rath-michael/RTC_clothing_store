@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<!--
+    I wanted to put a note in my page about the photos and text content I used on my page. I decided to use nike products because as I was building my page
+  I realized having photos that had different sizes and background colors would make the pages look very chaotic, not to mention getting the photos to line
+  up correctly and having all the same photos use the same dimensions would be very dificult. I figured if I was actually running my own store or had my own
+  company I would have my own actual product photos and I could control what the photos looked like, their size, etc which would solve my problem but since I'm not, I would have to use somebody who has already done that work. So I just wanted to put a disclaimer and say that all the photos are from the nike website, and all the product descriptions/colors/prices are from nike themselves as well. Nothing else on my page is from them though. I created everything else myself.
+-->
+
+<html>
+
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+<style>
+
+img {
+  max-height: 50%;
+}
+
+.title {
+  border: 3px solid #05386B;
+  background-color: #14A098;
+  display: inline-block; 
+  color: #05386B;
+  width: 40%; 
+  margin-right: 30%; 
+  margin-left: 30%; 
+  text-align: center;
+}
+
+.pic {
+  opacity: 1;
+}
+
+.pic:hover {
+  opacity: .8;
+}
+
+</style>
+
+<title>Final Project</title>
+
+</head>
+
+<body style="font-family: bookman, garamond, sans-serif;">
+<form action="C:\Users\micha\Desktop\Front End Web Dev\Final Project\form.html" method="post">
+
+<table class="headerTable">
+  <tr class="headerTableRow">
+    <td class="headerTableData" style="text-align: left; font-family: 'Audiowide', cursive;"><strong>MR//EC//</strong></td>
+    <td>
+      <table style="float: right; color: #EDF5E1;">
+        <tr>
+          <td>
+            <input type="text" name="user_id" placeholder="Username/Password">
+          </td>
+          <td>
+            <input type="password" name="password" placeholder="Password">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Log In" style="border: 3px solid #05386B; background-color: #0F292F; color: #EDF5E1;">
+          </td>
+          <td>
+            <a href="forgotaccount.html" style="color: #EDF5E1">Forgot Login?</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- Dropdown navigation menu on top of page -->
+<ul style="font-size: 130%; border: 3px solid #501F3A;">
+  <li><a href="homepage.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Apparel</a>
+    <div class="dropdown-content">
+      <a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Apparel\Mens\mensapparel.html">Mens</a>
+      <a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Apparel\Womens\womensapparel.html">Womens</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Footwear</a>
+    <div class="dropdown-content">
+      <a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Footwear\Mens\mensfootwear.html">Mens</a>
+      <a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Footwear\Womens\womensfootwear.html">Womens</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Accessories</a>
+    <div class="dropdown-content">
+      <a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Accessories\bags.html">Bags and Backpacks</a>
+      <a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Accessories\Other\other.html">Other</a>
+    </div>
+  </li>
+  <li style="float: right"><a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\cart.html">Cart</a></li>
+  <li style="float: right"><a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\signup.html">Sign Up</a></li>
+  <li style="float: left; padding-top: 13px; padding-left: 15px;">
+    <input type="text" name="searchmenu" placeholder="What are you looking for?" size="35">
+    <input type="submit" name="searchsubmit" value="Search" style="border: 3px solid #501F3A; background-color: #0F292F; color: #EDF5E1">
+  </li>
+</ul>
+
+<h1 class="title">Featured Daily Deals</h1>
+
+<table class="container" style="border: 3px solid #14A098; margin-top: 15px; background-color: #12333a; text-align: center; color: #cb2d6f;">
+  <tr>
+    <td><a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Apparel\Mens\m-apparel3.html"><img class="pic" src="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Apparel\Mens\mapparel3.jpg"></td>
+    <td><a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Apparel\Womens\w-apparel1.html"><img class="pic" src="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Apparel\Womens/wapparel1.jpg"></td>
+  </tr>
+  <tr>
+    <td><a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Accessories\Bags and backpacks\bags7.html"><img class="pic" src="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Accessories\Bags and backpacks\bags7.jpg"></td>
+    <td><a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Footwear\Mens\men-shoe7.html"><img class="pic" src="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Footwear\Mens\mshoe7.png" title="Hover over text"></a></td>
+  </tr>
+</table>
+
+</body>
+
+</html>
+
+<!--
+  I wanted to put a note in my page about the photos and text content I used on my page. I decided to use nike products because as I was building my page
+  I realized having photos that had different sizes and background colors would make the pages look very chaotic, not to mention getting the photos to line
+  up correctly and having all the same photos use the same dimensions would be very dificult. I figured if I was actually running my own store or had my own
+  company I would have my own actual product photos and I could control what the photos looked like, their size, etc which would solve my problem but since I'm not, I would have to use somebody who has already done that work. So I just wanted to put a disclaimer and say that all the photos are from the nike website, and all the product descriptions/colors/prices are from nike themselves as well. Nothing else on my page is from them though. I created everything else myself.
+
+
+dark gray - #0F292F
+(lighter for table)dark gray - #12333a
+
+light pink - #CB2D6F
+dark red - #501F3A
+
+light blue - #14A098
+dark blue - #05386B
+
+off white - #EDF5E1
+-->

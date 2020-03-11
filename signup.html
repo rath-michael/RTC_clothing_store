@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\mystyle.css">
+
+<style>
+
+body {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headerTable {
+  background-color: #14A098;
+  border: 3px solid #05386B;
+  margin-bottom: 1px;
+  width: 100%;
+}
+
+.headerTableRow {
+  height: 75px;
+}
+
+.headerTableData {
+  width: 50%;
+  color: #05386B;
+  font-size: 55px;
+}
+
+img {
+  max-height: 300px;
+  width: auto;
+  padding-top: 10px;
+}
+
+.container {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 200px;
+    /*padding-top: 125px;*/
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 5px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #CB2D6F;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #EDF5E1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #501F3A;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #CB2D6F;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  color: #EDF5E1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #501F3A;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.title {
+  border: 3px solid #05386B;
+  background-color: #14A098;
+  display: inline-block; 
+  color: #05386B;
+  width: 40%; 
+  margin-right: 30%; 
+  margin-left: 30%; 
+  text-align: center;
+}
+
+.wrapper {
+  width: 70%; 
+  margin-right: 15%; 
+  margin-left: 15%; 
+  border: 3px solid #14A098; 
+  background-color: #12333a
+}
+
+.margin {
+  margin-top: .5%;
+  font-size: 15px;
+}
+
+</style>
+
+<title>Final Project</title>
+
+</head>
+
+<body style="font-family: bookman, garamond, sans-serif;">
+  <form action="C:\Users\micha\Desktop\Front End Web Dev\Final Project\form.html" method="post">
+
+<table class="headerTable">
+  <tr class="headerTableRow">
+    <td class="headerTableData" style="text-align: left; font-family: 'Audiowide', cursive;"><strong>MR//EC//</strong></td>
+    <td>
+      <table style="float: right; color: #EDF5E1;">
+        <tr>
+          <td>
+            <input type="text" name="user_id" placeholder="Username/Password">
+          </td>
+          <td>
+            <input type="password" name="password" placeholder="Password">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Log In" style="border: 3px solid #05386B; background-color: #0F292F; color: #EDF5E1;">
+          </td>
+          <td>
+            <a href="forgotaccount.html" style="color: #EDF5E1">Forgot Login?</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- Dropdown navigation menu on top of page -->
+<ul style="font-size: 130%; border: 3px solid #501F3A;">
+  <li><a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\homepage.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Apparel</a>
+    <div class="dropdown-content">
+      <a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Apparel\Mens\mensapparel.html">Mens</a>
+      <a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Apparel\Womens\womensapparel.html">Womens</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Footwear</a>
+    <div class="dropdown-content">
+      <a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Footwear\Mens\mensfootwear.html">Mens</a>
+      <a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Footwear\Womens\womensfootwear.html">Womens</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Accessories</a>
+    <div class="dropdown-content">
+      <a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Accessories\Bags and backpacks\bags.html">Bags and Backpacks</a>
+      <a href="C:\Users\micha\Desktop\Front End Web Dev\Final Project\Accessories\Other\other.html">Other</a>
+    </div>
+  </li>
+  <li style="float: right"><a href="cart.html">Cart</a></li>
+  <li style="float: right"><a href="signup.html">Sign Up</a></li>
+  <li style="float: left; padding-top: 13px; padding-left: 15px;">
+    <input type="text" name="searchmenu" placeholder="What are you looking for?" size="35">
+    <input type="submit" name="searchsubmit" value="Search" style="border: 3px solid #501F3A; background-color: #0F292F; color: #EDF5E1">
+  </li>
+</ul>
+
+<h1 class="title">Sign up for an account</h1>
+
+<table class="container" style="border: 3px solid #14A098; margin-top: 15px; background-color: #12333a; text-align: center; color: #cb2d6f;">
+  <tr>
+    <td class="margin">
+      <input type="text" name="Username" placeholder="Username" class="margin">
+      <input type="text" name="Password" placeholder="Password" class="margin"><br>
+      <input type="text" name="First Name" placeholder="First Name" class="margin">
+      <input type="text" name="Last Name" placeholder="Last Name" class="margin"><br>
+      <input type="text" name="Email" placeholder="Email Address" size="46" class="margin"><br>
+      <input type="text" name="Address 1" placeholder="Address Line 1" size="46" class="margin"><br>
+      <input type="text" name="Address 2" placeholder="Address Line 2" size="46" class="margin"><br>
+      <input type="text" name="City" placeholder="City" class="margin" size="11">
+      <select name="State" class="margin">
+        <option value="Select">Select State</option>
+        <option value="Alaska">Alaska</option>
+        <option value="Arizona">Arizona</option>
+        <option value="Arkansas">Arkansas</option>
+        <option value="California">California</option>
+        <option value="Colorado">Colorado</optionn>
+        <option value="Connecticut">Connecticut</option>
+        <option value="Deleware">Deleware</option>
+        <option value="Florida">Florida</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Hawaii">Hawaii</option>
+        <option value="Idaho">Idaho</option>
+        <option value="Illinois">Illinois</option>
+        <option value="Indiana">Indiana</option>
+        <option value="Iowa">Iowa</option>
+        <option value="Kansas">Kansas</option>
+        <option value="Kentucky">Kentucky</optionn>
+        <option value="Louisianna">Louisianna</option>
+        <option value="Maine">Maine</option>
+        <option value="Maryland">Maryland</option>
+        <option value="Massachusetts">Massachusetts</option>
+        <option value="Michigan">Michigan</option>
+        <option value="Minnesota">Minnesota</option>
+        <option value="Mississippi">Mississippi</option>
+        <option value="Missouri">Missouri</option>
+        <option value="Montana">Montana</option>
+        <option value="Nebraska">Nebraska</option>
+        <option value="Nevada">Nevada</option>
+        <option value="New Hampshire">New Hampshire</optionn>
+        <option value="New Jersey">New Jersey</option>
+        <option value="New Mexico">New Mexico</option>
+        <option value="New York">New York</option>
+        <option value="North Carolina">North Carolina</option>
+        <option value="North Dakota">North Dakota</option>
+        <option value="Ohio">Ohio</option>
+        <option value="Oklahoma">Oklahoma</option>
+        <option value="Oregon">Oregon</option>
+        <option value="Pennsylvania">Pennsylvania</option>
+        <option value="Rhode Island">Rhode Island</option>
+        <option value="South Carolina">South Carolina</optionn>
+        <option value="South Dakota">South Dakota</option>
+        <option value="Tennessee">Tennessee</option>
+        <option value="Texas">Texas</option>
+        <option value="Utah">Utah</option>
+        <option value="Vermont">Vermont</option>
+        <option value="Virginia">Virginia</option>
+        <option value="Washington">Washington</option>
+        <option value="West Virginia">West Virginia</option>
+        <option value="Wisconsin">Wisconsin</option>
+        <option value="Wyoming">Wyoming</option>
+      </select>
+      <input type="text" name="Zip Code" placeholder="Zip Code" class="margin" size="11"><br>
+      <strong>Billing address same as shipping address?
+      <input type="radio" name="shipping/billing" value="yes">Yes
+      <input type="radio" name="shipping/billing" value="no">No<br></strong>
+      <strong>Would you like to hear about our promotions?
+      <input type="radio" name="promotions" value="yes">Yes
+      <input type="radio" name="promotions" value="no">No<br></strong>
+      <input type="submit" value="Sign Up" class="margin" style="border: 3px solid #05386B; background-color: #0F292F; color: #EDF5E1;">
+    </td>
+  </tr>
+</table>
+
+</form>
+
+</body>
+
+</html>
